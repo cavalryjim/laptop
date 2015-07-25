@@ -201,11 +201,11 @@ brew_install_or_upgrade 'git'
 #   number_of_cores=$(sysctl -n hw.ncpu)
 #   bundle config --global jobs $((number_of_cores - 1))
 #
-# brew_tap 'caskroom/cask'
+brew_tap 'caskroom/cask'
 #
 brew_install_or_upgrade 'brew-cask'
 #
-# brew_tap 'caskroom/versions'
+brew_tap 'caskroom/versions'
 
 # brew_cask_install 'cloud'
 # brew_cask_install 'flux'
@@ -222,6 +222,6 @@ fi
 # brew_tap 'pivotal/tap'
 # brew_install_or_upgrade 'cloudfoundry-cli'
 
-# if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
-#   open ~/Applications/GitHub.app
-# fi
+if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
+  open ~/Applications/GitHub.app
+fi
