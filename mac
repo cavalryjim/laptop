@@ -203,7 +203,7 @@ brew_install_or_upgrade 'git'
 #
 # brew_tap 'caskroom/cask'
 #
-# brew_install_or_upgrade 'brew-cask'
+brew_install_or_upgrade 'brew-cask'
 #
 # brew_tap 'caskroom/versions'
 
@@ -222,6 +222,6 @@ fi
 # brew_tap 'pivotal/tap'
 # brew_install_or_upgrade 'cloudfoundry-cli'
 
-if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
-  open ~/Applications/GitHub.app
-fi
+# if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
+#   open ~/Applications/GitHub.app
+# fi
